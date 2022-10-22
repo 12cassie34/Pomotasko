@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
+import dynamic from 'next/dynamic';
 
-import Login from "../components/login/Login";
+const Login = dynamic(() => import('../components/login/Login'), {
+    suspense: true,
+});
 
 const router = createBrowserRouter([
     {
