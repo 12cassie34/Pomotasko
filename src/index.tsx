@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from '@mui/material';
+
+import CssBaseline from '@mui/material/CssBaseline';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
 
 import theme from './styles';
 import router from './router';
@@ -13,6 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <RouterProvider router={router}></RouterProvider>
     </ThemeProvider>
   </React.StrictMode>

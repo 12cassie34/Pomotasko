@@ -34,6 +34,10 @@ const theme = createTheme({
       },
     palette: {
         mode: 'dark',
+        background: {
+            default: "#181521",
+            paper: "#181625"
+        }
     },
 });
 
